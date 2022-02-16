@@ -12,14 +12,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.rickandmorty.MainActivity
 import com.example.rickandmorty.R
 import com.example.rickandmorty.activity.FragmentCharacter.model.GetInfo
+import com.example.rickandmorty.adapter.CharacterAdapter
 
 class CharacterFragment : Fragment() {
 
-    lateinit var recyclerView : RecyclerView
+    val recyclerView = view?.findViewById<RecyclerView>(R.id.recyclerview_character)
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_character, container, false)
     }
@@ -27,10 +27,12 @@ class CharacterFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        recyclerView = view.findViewById(R.id.recyclerview_character)
-        recyclerView.layoutManager = LinearLayoutManager(context)
+        val x = arrayListOf("Rick")
+        val y = arrayListOf("Alive")
+        val z = arrayListOf("Human")
 
-        GetInfo().getInfo(1)
+        recyclerView?.layoutManager = LinearLayoutManager(MainActivity().applicationContext)
+        recyclerView?.adapter = CharacterAdapter(x,y,z)
     }
 
 }

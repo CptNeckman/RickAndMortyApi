@@ -13,9 +13,7 @@ import com.example.rickandmorty.R
 
 class CharacterAdapter(private val characterName: ArrayList<String>,
                        private val lifeStatus: ArrayList<String>,
-                       private val species: ArrayList<String>,
-                       private val originName: ArrayList<String>,
-                       private val characterPhoto : ArrayList<String>):
+                       private val species: ArrayList<String>):
     RecyclerView.Adapter<CharacterAdapter.MyViewHolder>(){
 
     class MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
@@ -23,8 +21,7 @@ class CharacterAdapter(private val characterName: ArrayList<String>,
         val characterName : TextView = itemView.findViewById(R.id.character_name)
         val lifeStatus : TextView = itemView.findViewById(R.id.life_status)
         val species : TextView = itemView.findViewById(R.id.species)
-        val originName : TextView = itemView.findViewById(R.id.origin_name)
-        val characterImage : ImageView = itemView.findViewById(R.id.character_photo)
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -39,12 +36,6 @@ class CharacterAdapter(private val characterName: ArrayList<String>,
         holder.characterName.text = characterName[position]
         holder.lifeStatus.text = lifeStatus[position]
         holder.species.text = species[position]
-        holder.originName.text = originName[position]
-        Glide
-            .with(MainActivity().applicationContext)
-            .load(characterPhoto[position])
-            .into(holder.characterImage)
-
     }
 
     override fun getItemCount(): Int {

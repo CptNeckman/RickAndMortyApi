@@ -1,7 +1,6 @@
 package com.example.rickandmorty.activity.FragmentCharacter.model
 
 import android.widget.Toast
-import com.example.rickandmorty.MainActivity
 import com.example.rickandmorty.activity.FragmentCharacter.view.CharacterFragment
 import com.example.rickandmorty.adapter.CharacterAdapter
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
@@ -36,7 +35,7 @@ class GetInfo {
             .build()
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://rickandmortyapi.com/")
+            .baseUrl("https://rickandmortyapi.com/")
             .client(okHttp)
             .addConverterFactory(GsonConverterFactory.create())
             .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
@@ -50,11 +49,7 @@ class GetInfo {
                 CharacterData(
                     data.name,
                     data.status,
-                    data.species,
-                    data.gender,
-                    data.origin.originName,
-                    data.location.locationName,
-                    data.image
+                    data.species
                 )
             }
 
@@ -65,19 +60,8 @@ class GetInfo {
                     nameList.add(it.name)
                     statusList.add(it.status)
                     speciesList.add(it.species)
-                    genderList.add(it.gender)
-                    originList.add(it.originName)
-                    locationList.add(it.locationName)
-                    imageList.add(it.image)
 
-                    CharacterFragment().recyclerView.adapter =
-                        CharacterAdapter(
-                            nameList,
-                            statusList,
-                            speciesList,
-                            originList,
-                            imageList
-                        )
+
                 },
                 { error ->
                     Toast.makeText(CharacterFragment().context, error.toString(), Toast.LENGTH_LONG).show()

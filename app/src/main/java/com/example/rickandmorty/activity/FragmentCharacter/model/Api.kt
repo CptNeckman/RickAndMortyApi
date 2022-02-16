@@ -7,6 +7,6 @@ import retrofit2.http.Query
 
 interface Api {
 
-    @GET("api/character")
-    fun getData(@Query("token") token: Int) : Single<CharacterResponse>
+    @GET("api/character/{token}")
+    fun getData(@Path("token") token: Int) : Single<CharacterResponse>
 }
