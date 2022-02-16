@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RickAndMorty</string>
+
+    <string name="characters">Characters</string>
+    <string name="location">Location</string>
+    <string name="episodes">Episodes</string>
+
+    <string name="imageDescription">Photo</string>
+
+    <dimen name="titleSize">20sp</dimen>
+    <dimen name="descriptionSize">15sp</dimen>
+
+</resources>
