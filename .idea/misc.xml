@@ -4,12 +4,19 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidProjects/RickAndMorty/app/src/main/res/drawable/background_bottom_nav.xml" value="0.3651041666666667" />
+        <entry key="..\:/AndroidProjects/RickAndMorty/app/src/main/res/drawable/background_identifier.xml" value="0.3651041666666667" />
+        <entry key="..\:/AndroidProjects/RickAndMorty/app/src/main/res/drawable/background_identifier_dead.xml" value="0.3651041666666667" />
+        <entry key="..\:/AndroidProjects/RickAndMorty/app/src/main/res/drawable/background_identifier_unknown.xml" value="0.3651041666666667" />
         <entry key="..\:/AndroidProjects/RickAndMorty/app/src/main/res/drawable/background_indificator.xml" value="0.3651041666666667" />
+        <entry key="..\:/AndroidProjects/RickAndMorty/app/src/main/res/drawable/location_recyclerview_item.xml" value="0.3651041666666667" />
         <entry key="..\:/AndroidProjects/RickAndMorty/app/src/main/res/font/font.xml" value="0.37916666666666665" />
+        <entry key="..\:/AndroidProjects/RickAndMorty/app/src/main/res/layout/actionbar.xml" value="0.3489583333333333" />
         <entry key="..\:/AndroidProjects/RickAndMorty/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/AndroidProjects/RickAndMorty/app/src/main/res/layout/episode_recyclerview_item.xml" value="0.3489583333333333" />
         <entry key="..\:/AndroidProjects/RickAndMorty/app/src/main/res/layout/fragment_character.xml" value="0.3489583333333333" />
         <entry key="..\:/AndroidProjects/RickAndMorty/app/src/main/res/layout/fragment_episode.xml" value="0.3489583333333333" />
         <entry key="..\:/AndroidProjects/RickAndMorty/app/src/main/res/layout/fragment_location.xml" value="0.3489583333333333" />
+        <entry key="..\:/AndroidProjects/RickAndMorty/app/src/main/res/layout/location_recyclerview_item.xml" value="0.3489583333333333" />
         <entry key="..\:/AndroidProjects/RickAndMorty/app/src/main/res/layout/recyclerview_item.xml" value="0.3489583333333333" />
         <entry key="..\:/AndroidProjects/RickAndMorty/app/src/main/res/menu/bottom_menu.xml" value="0.3489583333333333" />
         <entry key="..\:/AndroidProjects/RickAndMorty/app/src/main/res/menu/menu.xml" value="0.3489583333333333" />

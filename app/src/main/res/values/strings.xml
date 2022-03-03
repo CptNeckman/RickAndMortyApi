@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">RickAndMorty</string>
+    <string name="second_app_name">Rick And Morty</string>
 
     <string name="characters">Characters</string>
     <string name="location">Location</string>
@@ -7,7 +8,15 @@
 
     <string name="imageDescription">Photo</string>
 
-    <dimen name="titleSize">20sp</dimen>
-    <dimen name="descriptionSize">15sp</dimen>
+    <string name="originLocation">Origin Location:</string>
+    <string name="lastKnownLocation">Last known location:</string>
+    
+    <string name="episodeName">Episode Name:</string>
+    <string name="airDate">Air Date:</string>
+    <string name="episode">Episode</string>
+    
+    <string name="locationName">Location Name</string>
+    <string name="typeLocation">Type of Location</string>
+    <string name="dimension">Dimension</string>
 
 </resources>

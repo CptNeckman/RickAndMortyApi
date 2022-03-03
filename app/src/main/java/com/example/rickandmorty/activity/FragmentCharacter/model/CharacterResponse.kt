@@ -9,7 +9,13 @@ data class CharacterResponse(
     @SerializedName("status")
     val status: String,
     @SerializedName("species")
-    val species: String
+    val species: String,
+    @SerializedName("image")
+    val image: String,
+    @SerializedName("location")
+    val location: LocationNameResponse,
+    @SerializedName("origin")
+    val origin: OriginNameResponse
 
 )
 

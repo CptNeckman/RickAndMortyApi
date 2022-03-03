@@ -6,14 +6,10 @@
     tools:context=".activity.FragmentLocation.view.LocationFragment"
     android:background="@color/backgroundGrey">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:text="Locations is coming soon..."
-        android:textColor="@color/textWhite"
-        android:fontFamily="@font/get_schwifty"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 
 </FrameLayout>

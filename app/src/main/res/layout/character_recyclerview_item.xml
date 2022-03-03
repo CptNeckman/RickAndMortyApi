@@ -45,7 +45,7 @@
                     android:id="@+id/life_status_identifier"
                     android:layout_width="10dp"
                     android:layout_height="10dp"
-                    android:background="@drawable/background_identifier"/>
+                    android:background="@drawable/background_identifier_alive"/>
 
                 <TextView
                     android:id="@+id/life_status"
@@ -78,13 +78,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Last known location:"
+                android:text="@string/lastKnownLocation"
                 android:textSize="@dimen/descriptionSize"
                 android:textColor="@color/textGrey"
                 android:layout_marginTop="5dp"/>
 
             <TextView
-                android:id="@+id/origin_name"
+                android:id="@+id/lastLocation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Roy: A Life Well Lived"
@@ -95,12 +95,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="First Seen in:"
+                android:text="@string/originLocation"
                 android:textSize="@dimen/descriptionSize"
                 android:textColor="@color/textGrey"/>
 
             <TextView
-                android:id="@+id/first_seen_episode"
+                android:id="@+id/originLocation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Mortynight Run"

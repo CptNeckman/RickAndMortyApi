@@ -2,8 +2,8 @@ package com.example.rickandmorty.activity.FragmentCharacter.model
 
 import com.google.gson.annotations.SerializedName
 
-data class CharacterLocation(
+data class OriginNameResponse(
 
     @SerializedName("name")
-    val locationName: String
+    val originName: String
 )
