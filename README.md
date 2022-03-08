@@ -7,10 +7,11 @@
   <h6>List of locations</h6>
 </ul> 
 
-<h4>The application uses information when receiving from this open api -> <button onclick="window.location.href = 'https://rickandmortyapi.com/;">Api</button> </h4>
+<h4>The application uses information when receiving from this open api -> <a href="https://rickandmortyapi.com/">Api</a> </h4>
 
 <p>
   <image src="https://github.com/CptNeckman/RickAndMortyApi/blob/master/rick1.jpg" weight="200" height="350"/>
   <image src="https://github.com/CptNeckman/RickAndMortyApi/blob/master/rick2.jpg" weight="200" height="350"/>
   <image src="https://github.com/CptNeckman/RickAndMortyApi/blob/master/rick3.jpg" weight="200" height="350"/>
+  <image src="https://github.com/CptNeckman/RickAndMortyApi/blob/master/rick4.jpg" weight="200" height="350"/>
 </p>
