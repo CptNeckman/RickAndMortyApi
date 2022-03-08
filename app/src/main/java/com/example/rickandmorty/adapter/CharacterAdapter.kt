@@ -1,6 +1,8 @@
 package com.example.rickandmorty.adapter
 
 
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,8 +11,12 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.rickandmorty.R
+import com.example.rickandmorty.activity.ActivityCharacterInfo.view.ActivityCharacterInfo
+import com.example.rickandmorty.activity.FragmentCharacter.view.CharacterFragment
+import com.example.rickandmorty.activity.MainActivity
 
 class CharacterAdapter(
+    private var mContext: Context,
     private val characterName: ArrayList<String>,
     private val lifeStatus: ArrayList<String>,
     private val species: ArrayList<String>,
@@ -62,6 +68,18 @@ class CharacterAdapter(
             .load(characterPhoto[position])
             .placeholder(R.drawable.default_picture)
             .into(holder.photo)
+
+        holder.itemView.setOnClickListener {
+            val intent = Intent(mContext, ActivityCharacterInfo::class.java)
+            intent.putExtra("characterName", characterName[position])
+            intent.putExtra("lifeStatus", lifeStatus[position])
+            intent.putExtra("species", species[position])
+            intent.putExtra("characterPhoto", characterPhoto[position])
+            intent.putExtra("locationName", locationName[position])
+            intent.putExtra("originName", originName[position])
+            mContext.startActivity(intent)
+        }
+
     }
 
     override fun getItemCount(): Int {

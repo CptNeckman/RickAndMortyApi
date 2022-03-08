@@ -15,8 +15,16 @@
     <string name="airDate">Air Date:</string>
     <string name="episode">Episode</string>
     
-    <string name="locationName">Location Name</string>
-    <string name="typeLocation">Type of Location</string>
-    <string name="dimension">Dimension</string>
+    <string name="locationName">Location Name:</string>
+    <string name="typeLocation">Type of Location:</string>
+    <string name="dimension">Dimension:</string>
+
+    <string name="characterName">The name of the character</string>
+    <string name="status">The status of the character</string>
+    <string name="species">The species of the character</string>
+    <string name="gender">The gender of the character </string>
+    <string name="origin">The character is origin location</string>
+    <string name="lastLocation">Last known location endpoint</string>
+    <string name="episodesList">List of episodes in which this character appeared:</string>
 
 </resources>

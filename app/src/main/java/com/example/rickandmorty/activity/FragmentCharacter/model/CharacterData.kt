@@ -1,5 +1,7 @@
 package com.example.rickandmorty.activity.FragmentCharacter.model
 
+import retrofit2.http.Url
+
 data class CharacterData(
 
     val name: String,
@@ -7,5 +9,6 @@ data class CharacterData(
     val species: String,
     val image: String,
     val locationName: String,
-    val originName: String
+    val originName: String,
+    val episode: ArrayList<String>
 )
