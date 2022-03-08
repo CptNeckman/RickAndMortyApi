@@ -7,8 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.rickandmorty.activity.ActivityCharacterInfo.view.ActivityCharacterInfo
 import com.example.rickandmorty.activity.FragmentCharacter.model.CharacterApi
 import com.example.rickandmorty.activity.FragmentCharacter.model.CharacterData
+import com.example.rickandmorty.activity.FragmentEpisode.view.EpisodeFragment
 import com.example.rickandmorty.adapter.CharacterAdapter
 import com.example.rickandmorty.databinding.FragmentCharacterBinding
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
@@ -17,6 +19,7 @@ import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.http.Url
 import java.util.concurrent.TimeUnit
 
 class CharacterFragment : Fragment() {
@@ -29,6 +32,7 @@ class CharacterFragment : Fragment() {
     private val imageList = ArrayList<String>()
     private val locationList = ArrayList<String>()
     private val originList = ArrayList<String>()
+    var episode = ArrayList<String>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
@@ -83,7 +87,8 @@ class CharacterFragment : Fragment() {
                     data.species,
                     data.image,
                     data.location.locationName,
-                    data.origin.originName
+                    data.origin.originName,
+                    data.episode
                 )
             }
 
@@ -97,7 +102,9 @@ class CharacterFragment : Fragment() {
                     imageList.add(it.image)
                     locationList.add(it.locationName)
                     originList.add(it.originName)
+                    ActivityCharacterInfo().episode = it.episode
                     binding.recyclerView.adapter = CharacterAdapter(
+                        context!!,
                         textus,
                         statusList,
                         speciesList,
@@ -107,7 +114,7 @@ class CharacterFragment : Fragment() {
                     )
                 },
                 { error ->
-                    Toast.makeText(CharacterFragment().context, error.toString(), Toast.LENGTH_LONG)
+                    Toast.makeText(context, error.toString(), Toast.LENGTH_LONG)
                         .show()
                 }
             )
