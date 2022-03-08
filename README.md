@@ -15,3 +15,14 @@
   <image src="https://github.com/CptNeckman/RickAndMortyApi/blob/master/rick1.jpg" weight="200" height="350"/>
   <image src="https://github.com/CptNeckman/RickAndMortyApi/blob/master/rick2.jpg" weight="200" height="350"/>
 </p>
+
+<h4>The app uses:</h4>
+<ul>
+  <li><h6>RecyclerView</h6></li>
+  <li><h6>RxJava3</h6></li>
+  <li><h6>OkHttp</h6></li>
+  <li><h6>Retrofit2</h6></li>
+  <li>Gson</li>
+  <li><h6>Glide</h6></li>
+  <li><h6>Fragment</h6></li>
+</ul> 
