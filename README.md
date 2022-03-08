@@ -10,8 +10,8 @@
 <h4>The application uses information when receiving from this open api -> <a href="https://rickandmortyapi.com/">Api</a> </h4>
 
 <p>
+  <image src="https://github.com/CptNeckman/RickAndMortyApi/blob/master/rick4.jpg" weight="200" height="350"/>
+  <image src="https://github.com/CptNeckman/RickAndMortyApi/blob/master/rick3.jpg" weight="200" height="350"/>
   <image src="https://github.com/CptNeckman/RickAndMortyApi/blob/master/rick1.jpg" weight="200" height="350"/>
   <image src="https://github.com/CptNeckman/RickAndMortyApi/blob/master/rick2.jpg" weight="200" height="350"/>
-  <image src="https://github.com/CptNeckman/RickAndMortyApi/blob/master/rick3.jpg" weight="200" height="350"/>
-  <image src="https://github.com/CptNeckman/RickAndMortyApi/blob/master/rick4.jpg" weight="200" height="350"/>
 </p>
